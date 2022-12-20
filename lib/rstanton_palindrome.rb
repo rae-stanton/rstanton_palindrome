@@ -2,7 +2,28 @@
 
 require_relative "rstanton_palindrome/version"
 
-module RstantonPalindrome
-  class Error < StandardError; end
-  # Your code goes here...
+module Palindrome
+  def palindrome?
+    processed_content == processed_content.reverse
+  end
+
+
+
+  private
+
+    def processed_content
+      self.scan(/[a-z]/i).join.downcase
+    end
 end
+
+
+class String 
+  include Palindrome
+end
+
+
+
+class Integer
+  include Palindrome
+end
+

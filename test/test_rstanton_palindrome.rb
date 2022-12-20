@@ -3,11 +3,20 @@
 require "test_helper"
 
 class TestRstantonPalindrome < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::RstantonPalindrome::VERSION
+  
+  def test_non_palindrome
+    refute "apple".palindrome?
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_literal_palindrome
+    assert "racecar".palindrome?
+  end
+
+  def test_mixedcase_palindrome
+    assert "RaceCar".palindrome? 
+  end
+
+  def test_with_punctuatiion
+    assert "Madam, I'm Adam.".palindrome?
   end
 end
