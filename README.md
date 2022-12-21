@@ -45,7 +45,6 @@ $ irb
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -58,8 +57,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
     $ gem install rstanton_palindrome
 
 ## Usage
-
-TODO: Write usage instructions here
+testing for palindromes
 
 ## Development
 
